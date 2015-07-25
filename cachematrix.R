@@ -32,7 +32,7 @@ cacheSolve <- function(x, ...) {
         s <- x$getinverse()
         if(!is.null(s)){
                 return(s)
-        }                                                       ## If so, finds it in the cache and returns it.
+        }
         data <- x$get()         
         s <- solve(data, ...)
         x$setinverse(s)
